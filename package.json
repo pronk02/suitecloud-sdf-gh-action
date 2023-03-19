@@ -1,0 +1,54 @@
+{
+  "name": "sdfsync",
+  "version": "0.0.24",
+  "description": "Sync a NetSuite environment with a local repository.",
+  "main": "./dist/app.js",
+  "scripts": {
+    "test": "test",
+    "lint": "eslint --max-warnings 0 --ext ts,tsx,json src",
+    "build": "tsc --skipLibCheck",
+    "start": "node dist/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/christopherwxyz/sdfsync.git"
+  },
+  "keywords": [
+    "netsuite",
+    "suitecloud"
+  ],
+  "author": "christopherwxyz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/christopherwxyz/sdfsync/issues"
+  },
+  "homepage": "https://github.com/christopherwxyz/sdfsync#readme",
+  "devDependencies": {
+    "@types/node": "^18.11.6",
+    "@types/shelljs": "^0.8.11",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "eslint": "^8.0.1",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-standard-with-typescript": "^23.0.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-n": "^15.0.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-promise": "^6.0.0",
+    "module-alias": "^2.2.2",
+    "prettier": "^2.7.1",
+    "source-map-support": "^0.5.21",
+    "tsc-watch": "^5.0.3",
+    "typescript": "*"
+  },
+  "dependencies": {
+    "bluebird": "^3.7.2",
+    "dotenv": "^16.0.3",
+    "envalid": "^7.3.1",
+    "lodash": "^4.17.21",
+    "rimraf": "^3.0.2",
+    "shelljs": "^0.8.5"
+  },
+  "_moduleAliases": {
+    "@": "dist"
+  }
+}
